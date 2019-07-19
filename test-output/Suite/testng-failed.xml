@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="A4_Allure_Report_Demo.outerwear_youth_NB4251">
+        <methods>
+          <include name="select_quantity"/>
+          <include name="cart"/>
+          <include name="orderacknowledgement"/>
+          <include name="select_gender_garment"/>
+          <include name="login"/>
+          <include name="select_sport"/>
+          <include name="setbrowser"/>
+          <include name="select_style_decoration"/>
+        </methods>
+      </class> <!-- A4_Allure_Report_Demo.outerwear_youth_NB4251 -->
+      <class name="A4_Allure_Report_Demo.outerwear_male_N4246">
+        <methods>
+          <include name="select_sport"/>
+          <include name="select_style_decoration"/>
+          <include name="setbrowser"/>
+          <include name="orderacknowledgement"/>
+          <include name="select_gender_garment"/>
+          <include name="login"/>
+          <include name="select_quantity"/>
+          <include name="cart"/>
+        </methods>
+      </class> <!-- A4_Allure_Report_Demo.outerwear_male_N4246 -->
+      <class name="A4_Allure_Report_Demo.track_female_NW5341">
+        <methods>
+          <include name="cart"/>
+          <include name="select_sport"/>
+          <include name="setbrowser"/>
+          <include name="select_style_decoration"/>
+          <include name="orderacknowledgement"/>
+          <include name="select_gender_garment"/>
+          <include name="select_quantity"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- A4_Allure_Report_Demo.track_female_NW5341 -->
+      <class name="A4_Allure_Report_Demo.football_men_N4190">
+        <methods>
+          <include name="orderacknowledgement"/>
+          <include name="select_gender_garment"/>
+          <include name="select_quantity"/>
+          <include name="cart"/>
+          <include name="login"/>
+          <include name="select_style_decoration"/>
+          <include name="select_sport"/>
+          <include name="setbrowser"/>
+        </methods>
+      </class> <!-- A4_Allure_Report_Demo.football_men_N4190 -->
+      <class name="A4_Allure_Report_Demo.lacrose_youth_NB2274">
+        <methods>
+          <include name="select_sport"/>
+          <include name="setbrowser"/>
+          <include name="select_style_decoration"/>
+          <include name="login"/>
+          <include name="select_quantity"/>
+          <include name="cart"/>
+          <include name="select_gender_garment"/>
+          <include name="orderacknowledgement"/>
+        </methods>
+      </class> <!-- A4_Allure_Report_Demo.lacrose_youth_NB2274 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

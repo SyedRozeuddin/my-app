@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="A4_Allure_Report_Demo.T1_baseball_youth_NB3165_shirts_youth_cooling_performance_long_sleeve_crew"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,1541 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>135/5/14</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 25 15:21:14 PKT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>1897 seconds (1897728 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_youth_NB4251.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.outerwear_youth_NB4251</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;decoration_prices&apos;]//tr[4]//td[5]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60975}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: e0268f2d08cee5da45389e4272801187
+*** Element info: {Using=xpath, value=//table[@id=&apos;decoration_prices&apos;]//tr[4]//td[5]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at A4_Allure_Report_Demo.outerwear_youth_NB4251.select_quantity(outerwear_youth_NB4251.java:101)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1963218853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1963218853'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;decoration_prices&apos;]//tr[4]//td[5]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60975}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: e0268f2d08cee5da45389e4272801187
+*** Element info: {Using=xpath, value=//table[@id=&apos;decoration_prices&apos;]//tr[4]//td[5]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at A4_Allure_Report_Demo.outerwear_youth_NB4251.select_quantity(outerwear_youth_NB4251.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>A4_Allure_Report_Demo.outerwear_youth_NB4251@327b636c</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_men_N4190.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.football_men_N4190</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;#back&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60636}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: be7916e21e33c7c2427b836088ed9144
+*** Element info: {Using=xpath, value=//a[@href=&apos;#back&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at A4_Allure_Report_Demo.football_men_N4190.select_style_decoration(football_men_N4190.java:83)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace137902612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace137902612'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;#back&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60636}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: be7916e21e33c7c2427b836088ed9144
+*** Element info: {Using=xpath, value=//a[@href=&apos;#back&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at A4_Allure_Report_Demo.football_men_N4190.select_style_decoration(football_men_N4190.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>58</td>
+<td>A4_Allure_Report_Demo.football_men_N4190@2b6856dd</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_youth_NB2274.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.lacrose_youth_NB2274</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60783}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: a477641446110e6027aa5106a82b8ac5
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at A4_Allure_Report_Demo.lacrose_youth_NB2274.select_style_decoration(lacrose_youth_NB2274.java:98)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace409848581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace409848581'><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60783}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: a477641446110e6027aa5106a82b8ac5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at A4_Allure_Report_Demo.lacrose_youth_NB2274.select_style_decoration(lacrose_youth_NB2274.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>79</td>
+<td>A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_male_N4246.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.outerwear_male_N4246</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;#back&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60909}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 3f3fbf1bcea4bf3a2a29b2aa28f81629
+*** Element info: {Using=xpath, value=//a[@href=&apos;#back&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at A4_Allure_Report_Demo.outerwear_male_N4246.select_style_decoration(outerwear_male_N4246.java:93)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1867459776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1867459776'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;#back&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60909}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 3f3fbf1bcea4bf3a2a29b2aa28f81629
+*** Element info: {Using=xpath, value=//a[@href=&apos;#back&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at A4_Allure_Report_Demo.outerwear_male_N4246.select_style_decoration(outerwear_male_N4246.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>58</td>
+<td>A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_female_NW5341.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.track_female_NW5341</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;#back&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61209}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: b289b08fd956b32e7709a89ec0c34983
+*** Element info: {Using=xpath, value=//a[@href=&apos;#back&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at A4_Allure_Report_Demo.track_female_NW5341.select_style_decoration(track_female_NW5341.java:89)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641289051", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1641289051'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;#back&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HR3H067&apos;, ip: &apos;192.168.88.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\A\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61209}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: b289b08fd956b32e7709a89ec0c34983
+*** Element info: {Using=xpath, value=//a[@href=&apos;#back&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at A4_Allure_Report_Demo.track_female_NW5341.select_style_decoration(track_female_NW5341.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>97</td>
+<td>A4_Allure_Report_Demo.track_female_NW5341@5e4c8041</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_female_NW3201.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.baseball_female_NW3201</td>
+<td></td>
+<td>5</td>
+<td>A4_Allure_Report_Demo.baseball_female_NW3201@6156496</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_male_N4241.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.baseball_male_N4241</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.baseball_male_N4241@3c153a1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_youth_NB6603.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.baseball_youth_NB6603</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.baseball_youth_NB6603@b62fe6d</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_female_NW5284.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.basketball_female_NW5284</td>
+<td></td>
+<td>5</td>
+<td>A4_Allure_Report_Demo.basketball_female_NW5284@13acb0d1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_male_NF1270.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.basketball_male_NF1270</td>
+<td></td>
+<td>5</td>
+<td>A4_Allure_Report_Demo.basketball_male_NF1270@3e3047e6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_youth_NB3142.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.basketball_youth_NB3142</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.basketball_youth_NB3142@37e547da</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_youth_NB3142.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.football_youth_NB3142</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.football_youth_NB3142@5db45159</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_male_N5293.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.lacrose_male_N5293</td>
+<td></td>
+<td>5</td>
+<td>A4_Allure_Report_Demo.lacrose_male_N5293@6107227e</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_female_NW4245.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.outerwear_female_NW4245</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.outerwear_female_NW4245@15761df8</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_female_NW3223.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.soccer_female_NW3223</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.soccer_female_NW3223@45dd4eda</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_male_N3001.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.soccer_male_N3001</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.soccer_male_N3001@60611244</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_youth_NB3373.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.soccer_youth_NB3373</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.soccer_youth_NB3373@3745e5c6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_male_N2359.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.track_male_N2359</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.track_male_N2359@71c8becc</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_youth_NB4234.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.track_youth_NB4234</td>
+<td></td>
+<td>3</td>
+<td>A4_Allure_Report_Demo.track_youth_NB4234@19d37183</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_female_NW3295.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.volleyball_female_NW3295</td>
+<td></td>
+<td>5</td>
+<td>A4_Allure_Report_Demo.volleyball_female_NW3295@1a0dcaa</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_male_N4268.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.volleyball_male_N4268</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.volleyball_male_N4268@3bd40a57</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_youth_NB5244.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.volleyball_youth_NB5244</td>
+<td></td>
+<td>3</td>
+<td>A4_Allure_Report_Demo.volleyball_youth_NB5244@fdefd3f</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_female_NW3201.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.baseball_female_NW3201</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.baseball_female_NW3201@6156496</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_male_N4241.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.baseball_male_N4241</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.baseball_male_N4241@3c153a1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_youth_NB6603.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.baseball_youth_NB6603</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.baseball_youth_NB6603@b62fe6d</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_female_NW5284.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.basketball_female_NW5284</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.basketball_female_NW5284@13acb0d1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_male_NF1270.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.basketball_male_NF1270</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.basketball_male_NF1270@3e3047e6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_youth_NB3142.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.basketball_youth_NB3142</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.basketball_youth_NB3142@37e547da</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_men_N4190.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.football_men_N4190</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.football_men_N4190@2b6856dd</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_youth_NB3142.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.football_youth_NB3142</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.football_youth_NB3142@5db45159</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_male_N5293.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.lacrose_male_N5293</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.lacrose_male_N5293@6107227e</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_youth_NB2274.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.lacrose_youth_NB2274</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_female_NW4245.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.outerwear_female_NW4245</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.outerwear_female_NW4245@15761df8</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_male_N4246.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.outerwear_male_N4246</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_youth_NB4251.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.outerwear_youth_NB4251</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.outerwear_youth_NB4251@327b636c</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_female_NW3223.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.soccer_female_NW3223</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.soccer_female_NW3223@45dd4eda</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_male_N3001.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.soccer_male_N3001</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.soccer_male_N3001@60611244</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_youth_NB3373.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.soccer_youth_NB3373</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.soccer_youth_NB3373@3745e5c6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_female_NW5341.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.track_female_NW5341</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.track_female_NW5341@5e4c8041</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_male_N2359.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.track_male_N2359</td>
+<td></td>
+<td>3</td>
+<td>A4_Allure_Report_Demo.track_male_N2359@71c8becc</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_youth_NB4234.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.track_youth_NB4234</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.track_youth_NB4234@19d37183</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_female_NW3295.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.volleyball_female_NW3295</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.volleyball_female_NW3295@1a0dcaa</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_male_N4268.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.volleyball_male_N4268</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.volleyball_male_N4268@3bd40a57</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_youth_NB5244.login()'><b>login</b><br>Test class: A4_Allure_Report_Demo.volleyball_youth_NB5244</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.volleyball_youth_NB5244@fdefd3f</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_female_NW3201.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.baseball_female_NW3201</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.baseball_female_NW3201@6156496</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_male_N4241.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.baseball_male_N4241</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.baseball_male_N4241@3c153a1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_youth_NB6603.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.baseball_youth_NB6603</td>
+<td></td>
+<td>3</td>
+<td>A4_Allure_Report_Demo.baseball_youth_NB6603@b62fe6d</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_female_NW5284.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.basketball_female_NW5284</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.basketball_female_NW5284@13acb0d1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_male_NF1270.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.basketball_male_NF1270</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.basketball_male_NF1270@3e3047e6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_youth_NB3142.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.basketball_youth_NB3142</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.basketball_youth_NB3142@37e547da</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_youth_NB3142.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.football_youth_NB3142</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.football_youth_NB3142@5db45159</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_male_N5293.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.lacrose_male_N5293</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.lacrose_male_N5293@6107227e</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_female_NW4245.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.outerwear_female_NW4245</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.outerwear_female_NW4245@15761df8</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_female_NW3223.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.soccer_female_NW3223</td>
+<td></td>
+<td>3</td>
+<td>A4_Allure_Report_Demo.soccer_female_NW3223@45dd4eda</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_male_N3001.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.soccer_male_N3001</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.soccer_male_N3001@60611244</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_youth_NB3373.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.soccer_youth_NB3373</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.soccer_youth_NB3373@3745e5c6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_male_N2359.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.track_male_N2359</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.track_male_N2359@71c8becc</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_youth_NB4234.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.track_youth_NB4234</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.track_youth_NB4234@19d37183</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_female_NW3295.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.volleyball_female_NW3295</td>
+<td></td>
+<td>3</td>
+<td>A4_Allure_Report_Demo.volleyball_female_NW3295@1a0dcaa</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_male_N4268.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.volleyball_male_N4268</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.volleyball_male_N4268@3bd40a57</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_youth_NB5244.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.volleyball_youth_NB5244</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.volleyball_youth_NB5244@fdefd3f</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_female_NW3201.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.baseball_female_NW3201</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.baseball_female_NW3201@6156496</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_male_N4241.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.baseball_male_N4241</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.baseball_male_N4241@3c153a1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_youth_NB6603.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.baseball_youth_NB6603</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.baseball_youth_NB6603@b62fe6d</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_female_NW5284.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.basketball_female_NW5284</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.basketball_female_NW5284@13acb0d1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_male_NF1270.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.basketball_male_NF1270</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.basketball_male_NF1270@3e3047e6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_youth_NB3142.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.basketball_youth_NB3142</td>
+<td></td>
+<td>0</td>
+<td>A4_Allure_Report_Demo.basketball_youth_NB3142@37e547da</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_men_N4190.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.football_men_N4190</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.football_men_N4190@2b6856dd</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_youth_NB3142.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.football_youth_NB3142</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.football_youth_NB3142@5db45159</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_male_N5293.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.lacrose_male_N5293</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.lacrose_male_N5293@6107227e</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_youth_NB2274.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.lacrose_youth_NB2274</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_female_NW4245.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.outerwear_female_NW4245</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.outerwear_female_NW4245@15761df8</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_male_N4246.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.outerwear_male_N4246</td>
+<td></td>
+<td>2</td>
+<td>A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_youth_NB4251.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.outerwear_youth_NB4251</td>
+<td></td>
+<td>0</td>
+<td>A4_Allure_Report_Demo.outerwear_youth_NB4251@327b636c</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_female_NW3223.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.soccer_female_NW3223</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.soccer_female_NW3223@45dd4eda</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_male_N3001.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.soccer_male_N3001</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.soccer_male_N3001@60611244</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_youth_NB3373.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.soccer_youth_NB3373</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.soccer_youth_NB3373@3745e5c6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_female_NW5341.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.track_female_NW5341</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.track_female_NW5341@5e4c8041</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_male_N2359.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.track_male_N2359</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.track_male_N2359@71c8becc</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_youth_NB4234.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.track_youth_NB4234</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.track_youth_NB4234@19d37183</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_female_NW3295.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.volleyball_female_NW3295</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.volleyball_female_NW3295@1a0dcaa</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_male_N4268.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.volleyball_male_N4268</td>
+<td></td>
+<td>0</td>
+<td>A4_Allure_Report_Demo.volleyball_male_N4268@3bd40a57</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_youth_NB5244.select_gender_garment()'><b>select_gender_garment</b><br>Test class: A4_Allure_Report_Demo.volleyball_youth_NB5244</td>
+<td></td>
+<td>1</td>
+<td>A4_Allure_Report_Demo.volleyball_youth_NB5244@fdefd3f</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_female_NW3201.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.baseball_female_NW3201</td>
+<td></td>
+<td>9</td>
+<td>A4_Allure_Report_Demo.baseball_female_NW3201@6156496</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_male_N4241.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.baseball_male_N4241</td>
+<td></td>
+<td>8</td>
+<td>A4_Allure_Report_Demo.baseball_male_N4241@3c153a1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_youth_NB6603.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.baseball_youth_NB6603</td>
+<td></td>
+<td>5</td>
+<td>A4_Allure_Report_Demo.baseball_youth_NB6603@b62fe6d</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_female_NW5284.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.basketball_female_NW5284</td>
+<td></td>
+<td>5</td>
+<td>A4_Allure_Report_Demo.basketball_female_NW5284@13acb0d1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_male_NF1270.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.basketball_male_NF1270</td>
+<td></td>
+<td>11</td>
+<td>A4_Allure_Report_Demo.basketball_male_NF1270@3e3047e6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_youth_NB3142.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.basketball_youth_NB3142</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.basketball_youth_NB3142@37e547da</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_youth_NB3142.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.football_youth_NB3142</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.football_youth_NB3142@5db45159</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_male_N5293.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.lacrose_male_N5293</td>
+<td></td>
+<td>8</td>
+<td>A4_Allure_Report_Demo.lacrose_male_N5293@6107227e</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_female_NW4245.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.outerwear_female_NW4245</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.outerwear_female_NW4245@15761df8</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_female_NW3223.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.soccer_female_NW3223</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.soccer_female_NW3223@45dd4eda</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_male_N3001.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.soccer_male_N3001</td>
+<td></td>
+<td>4</td>
+<td>A4_Allure_Report_Demo.soccer_male_N3001@60611244</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_youth_NB3373.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.soccer_youth_NB3373</td>
+<td></td>
+<td>12</td>
+<td>A4_Allure_Report_Demo.soccer_youth_NB3373@3745e5c6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_male_N2359.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.track_male_N2359</td>
+<td></td>
+<td>5</td>
+<td>A4_Allure_Report_Demo.track_male_N2359@71c8becc</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_youth_NB4234.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.track_youth_NB4234</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.track_youth_NB4234@19d37183</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_female_NW3295.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.volleyball_female_NW3295</td>
+<td></td>
+<td>10</td>
+<td>A4_Allure_Report_Demo.volleyball_female_NW3295@1a0dcaa</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_male_N4268.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.volleyball_male_N4268</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.volleyball_male_N4268@3bd40a57</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_youth_NB5244.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.volleyball_youth_NB5244</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.volleyball_youth_NB5244@fdefd3f</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_female_NW3201.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.baseball_female_NW3201</td>
+<td></td>
+<td>8</td>
+<td>A4_Allure_Report_Demo.baseball_female_NW3201@6156496</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_male_N4241.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.baseball_male_N4241</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.baseball_male_N4241@3c153a1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_youth_NB6603.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.baseball_youth_NB6603</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.baseball_youth_NB6603@b62fe6d</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_female_NW5284.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.basketball_female_NW5284</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.basketball_female_NW5284@13acb0d1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_male_NF1270.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.basketball_male_NF1270</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.basketball_male_NF1270@3e3047e6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_youth_NB3142.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.basketball_youth_NB3142</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.basketball_youth_NB3142@37e547da</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_men_N4190.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.football_men_N4190</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.football_men_N4190@2b6856dd</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_youth_NB3142.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.football_youth_NB3142</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.football_youth_NB3142@5db45159</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_male_N5293.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.lacrose_male_N5293</td>
+<td></td>
+<td>6</td>
+<td>A4_Allure_Report_Demo.lacrose_male_N5293@6107227e</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_youth_NB2274.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.lacrose_youth_NB2274</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_female_NW4245.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.outerwear_female_NW4245</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.outerwear_female_NW4245@15761df8</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_male_N4246.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.outerwear_male_N4246</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_youth_NB4251.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.outerwear_youth_NB4251</td>
+<td></td>
+<td>8</td>
+<td>A4_Allure_Report_Demo.outerwear_youth_NB4251@327b636c</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_female_NW3223.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.soccer_female_NW3223</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.soccer_female_NW3223@45dd4eda</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_male_N3001.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.soccer_male_N3001</td>
+<td></td>
+<td>8</td>
+<td>A4_Allure_Report_Demo.soccer_male_N3001@60611244</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_youth_NB3373.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.soccer_youth_NB3373</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.soccer_youth_NB3373@3745e5c6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_female_NW5341.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.track_female_NW5341</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.track_female_NW5341@5e4c8041</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_male_N2359.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.track_male_N2359</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.track_male_N2359@71c8becc</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_youth_NB4234.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.track_youth_NB4234</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.track_youth_NB4234@19d37183</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_female_NW3295.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.volleyball_female_NW3295</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.volleyball_female_NW3295@1a0dcaa</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_male_N4268.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.volleyball_male_N4268</td>
+<td></td>
+<td>7</td>
+<td>A4_Allure_Report_Demo.volleyball_male_N4268@3bd40a57</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_youth_NB5244.select_sport()'><b>select_sport</b><br>Test class: A4_Allure_Report_Demo.volleyball_youth_NB5244</td>
+<td></td>
+<td>8</td>
+<td>A4_Allure_Report_Demo.volleyball_youth_NB5244@fdefd3f</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_female_NW3201.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.baseball_female_NW3201</td>
+<td></td>
+<td>56</td>
+<td>A4_Allure_Report_Demo.baseball_female_NW3201@6156496</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_male_N4241.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.baseball_male_N4241</td>
+<td></td>
+<td>40</td>
+<td>A4_Allure_Report_Demo.baseball_male_N4241@3c153a1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.baseball_youth_NB6603.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.baseball_youth_NB6603</td>
+<td></td>
+<td>42</td>
+<td>A4_Allure_Report_Demo.baseball_youth_NB6603@b62fe6d</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_female_NW5284.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.basketball_female_NW5284</td>
+<td></td>
+<td>41</td>
+<td>A4_Allure_Report_Demo.basketball_female_NW5284@13acb0d1</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_male_NF1270.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.basketball_male_NF1270</td>
+<td></td>
+<td>51</td>
+<td>A4_Allure_Report_Demo.basketball_male_NF1270@3e3047e6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.basketball_youth_NB3142.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.basketball_youth_NB3142</td>
+<td></td>
+<td>42</td>
+<td>A4_Allure_Report_Demo.basketball_youth_NB3142@37e547da</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_youth_NB3142.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.football_youth_NB3142</td>
+<td></td>
+<td>38</td>
+<td>A4_Allure_Report_Demo.football_youth_NB3142@5db45159</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_male_N5293.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.lacrose_male_N5293</td>
+<td></td>
+<td>35</td>
+<td>A4_Allure_Report_Demo.lacrose_male_N5293@6107227e</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_female_NW4245.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.outerwear_female_NW4245</td>
+<td></td>
+<td>40</td>
+<td>A4_Allure_Report_Demo.outerwear_female_NW4245@15761df8</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_youth_NB4251.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.outerwear_youth_NB4251</td>
+<td></td>
+<td>27</td>
+<td>A4_Allure_Report_Demo.outerwear_youth_NB4251@327b636c</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_female_NW3223.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.soccer_female_NW3223</td>
+<td></td>
+<td>40</td>
+<td>A4_Allure_Report_Demo.soccer_female_NW3223@45dd4eda</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_male_N3001.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.soccer_male_N3001</td>
+<td></td>
+<td>37</td>
+<td>A4_Allure_Report_Demo.soccer_male_N3001@60611244</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.soccer_youth_NB3373.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.soccer_youth_NB3373</td>
+<td></td>
+<td>38</td>
+<td>A4_Allure_Report_Demo.soccer_youth_NB3373@3745e5c6</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_male_N2359.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.track_male_N2359</td>
+<td></td>
+<td>42</td>
+<td>A4_Allure_Report_Demo.track_male_N2359@71c8becc</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_youth_NB4234.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.track_youth_NB4234</td>
+<td></td>
+<td>39</td>
+<td>A4_Allure_Report_Demo.track_youth_NB4234@19d37183</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_female_NW3295.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.volleyball_female_NW3295</td>
+<td></td>
+<td>52</td>
+<td>A4_Allure_Report_Demo.volleyball_female_NW3295@1a0dcaa</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_male_N4268.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.volleyball_male_N4268</td>
+<td></td>
+<td>44</td>
+<td>A4_Allure_Report_Demo.volleyball_male_N4268@3bd40a57</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.volleyball_youth_NB5244.select_style_decoration()'><b>select_style_decoration</b><br>Test class: A4_Allure_Report_Demo.volleyball_youth_NB5244</td>
+<td></td>
+<td>39</td>
+<td>A4_Allure_Report_Demo.volleyball_youth_NB5244@fdefd3f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_men_N4190.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.football_men_N4190</td>
+<td><div><pre>java.lang.Throwable: Method football_men_N4190.cart()[pri:0, instance:A4_Allure_Report_Demo.football_men_N4190@2b6856dd] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2118050088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2118050088'><pre>java.lang.Throwable: Method football_men_N4190.cart()[pri:0, instance:A4_Allure_Report_Demo.football_men_N4190@2b6856dd] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_youth_NB2274.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.lacrose_youth_NB2274</td>
+<td><div><pre>java.lang.Throwable: Method lacrose_youth_NB2274.cart()[pri:0, instance:A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace778778524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace778778524'><pre>java.lang.Throwable: Method lacrose_youth_NB2274.cart()[pri:0, instance:A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_male_N4246.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.outerwear_male_N4246</td>
+<td><div><pre>java.lang.Throwable: Method outerwear_male_N4246.cart()[pri:0, instance:A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1378814904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1378814904'><pre>java.lang.Throwable: Method outerwear_male_N4246.cart()[pri:0, instance:A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_youth_NB4251.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.outerwear_youth_NB4251</td>
+<td><div><pre>java.lang.Throwable: Method outerwear_youth_NB4251.cart()[pri:0, instance:A4_Allure_Report_Demo.outerwear_youth_NB4251@327b636c] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1707510247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1707510247'><pre>java.lang.Throwable: Method outerwear_youth_NB4251.cart()[pri:0, instance:A4_Allure_Report_Demo.outerwear_youth_NB4251@327b636c] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_female_NW5341.cart()'><b>cart</b><br>Test class: A4_Allure_Report_Demo.track_female_NW5341</td>
+<td><div><pre>java.lang.Throwable: Method track_female_NW5341.cart()[pri:0, instance:A4_Allure_Report_Demo.track_female_NW5341@5e4c8041] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace153337703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace153337703'><pre>java.lang.Throwable: Method track_female_NW5341.cart()[pri:0, instance:A4_Allure_Report_Demo.track_female_NW5341@5e4c8041] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_men_N4190.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.football_men_N4190</td>
+<td><div><pre>java.lang.Throwable: Method football_men_N4190.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.football_men_N4190@2b6856dd] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace376234567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace376234567'><pre>java.lang.Throwable: Method football_men_N4190.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.football_men_N4190@2b6856dd] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_youth_NB2274.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.lacrose_youth_NB2274</td>
+<td><div><pre>java.lang.Throwable: Method lacrose_youth_NB2274.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace536353549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace536353549'><pre>java.lang.Throwable: Method lacrose_youth_NB2274.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_male_N4246.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.outerwear_male_N4246</td>
+<td><div><pre>java.lang.Throwable: Method outerwear_male_N4246.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1782208222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1782208222'><pre>java.lang.Throwable: Method outerwear_male_N4246.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_youth_NB4251.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.outerwear_youth_NB4251</td>
+<td><div><pre>java.lang.Throwable: Method outerwear_youth_NB4251.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.outerwear_youth_NB4251@327b636c] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1560607671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1560607671'><pre>java.lang.Throwable: Method outerwear_youth_NB4251.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.outerwear_youth_NB4251@327b636c] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_female_NW5341.orderacknowledgement()'><b>orderacknowledgement</b><br>Test class: A4_Allure_Report_Demo.track_female_NW5341</td>
+<td><div><pre>java.lang.Throwable: Method track_female_NW5341.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.track_female_NW5341@5e4c8041] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace571309751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace571309751'><pre>java.lang.Throwable: Method track_female_NW5341.orderacknowledgement()[pri:0, instance:A4_Allure_Report_Demo.track_female_NW5341@5e4c8041] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.football_men_N4190.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.football_men_N4190</td>
+<td><div><pre>java.lang.Throwable: Method football_men_N4190.select_quantity()[pri:0, instance:A4_Allure_Report_Demo.football_men_N4190@2b6856dd] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace962221884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace962221884'><pre>java.lang.Throwable: Method football_men_N4190.select_quantity()[pri:0, instance:A4_Allure_Report_Demo.football_men_N4190@2b6856dd] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.lacrose_youth_NB2274.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.lacrose_youth_NB2274</td>
+<td><div><pre>java.lang.Throwable: Method lacrose_youth_NB2274.select_quantity()[pri:0, instance:A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1013953793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1013953793'><pre>java.lang.Throwable: Method lacrose_youth_NB2274.select_quantity()[pri:0, instance:A4_Allure_Report_Demo.lacrose_youth_NB2274@7c417213] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.outerwear_male_N4246.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.outerwear_male_N4246</td>
+<td><div><pre>java.lang.Throwable: Method outerwear_male_N4246.select_quantity()[pri:0, instance:A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace607192333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace607192333'><pre>java.lang.Throwable: Method outerwear_male_N4246.select_quantity()[pri:0, instance:A4_Allure_Report_Demo.outerwear_male_N4246@6ab7a896] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='A4_Allure_Report_Demo.track_female_NW5341.select_quantity()'><b>select_quantity</b><br>Test class: A4_Allure_Report_Demo.track_female_NW5341</td>
+<td><div><pre>java.lang.Throwable: Method track_female_NW5341.select_quantity()[pri:0, instance:A4_Allure_Report_Demo.track_female_NW5341@5e4c8041] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1815672030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1815672030'><pre>java.lang.Throwable: Method track_female_NW5341.select_quantity()[pri:0, instance:A4_Allure_Report_Demo.track_female_NW5341@5e4c8041] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>
